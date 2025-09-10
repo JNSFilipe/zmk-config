@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ESCAPE
+  - ↹
   - Q
   - W
   - E
@@ -12,10 +12,10 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-outline$$
-  - ↹
-  - A
-  - S
+  - '-'
+  - Hyper+LEFT SHIFT
+  - {t: A, h: LOW}
+  - {t: S, h: RAI}
   - D
   - F
   - G
@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - ;
+  - '`'
   - ''''
-  - LEFT COMMAND
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -36,56 +36,56 @@ layers:
   - ','
   - .
   - /
-  - Esc
-  - {t: LOW, h: toggle}
-  - Hyper+LSHIFT
-  - ␣
-  - ⏎
-  - RIGHT ALT
-  - {t: RAI, h: toggle}
+  - \
+  - {t: ESCAPE, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: BACKSPACE, h: RIGHT ALT}
+  - {t: ␣, h: LEFT META}
+  - {t: RETURN, h: RIGHT COMMAND}
+  - {t: DELETE, h: RIGHT ALT}
+  - {t: ':', h: RIGHT CONTROL}
   LOW:
   - ↹
-  - '1'
-  - '2'
-  - '3'
+  - '*'
+  - +
+  - '7'
+  - '8'
+  - '5'
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '{'
+  - '}'
+  - /
+  - {type: held}
+  - '-'
   - '4'
   - '5'
   - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
   - ←
   - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - '='
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '%'
+  - AMPERSAND
+  - <
+  - '>'
+  - '['
+  - ']'
+  - {t: ESCAPE, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: BACKSPACE, h: LEFT ALT}
+  - {t: ␣, h: LEFT COMMAND}
+  - {t: ⏎, h: RIGHT COMMAND}
+  - {t: DELETE, h: RIGHT ALT}
+  - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
   RAI:
   - ↹
   - '!'
@@ -101,7 +101,7 @@ layers:
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
