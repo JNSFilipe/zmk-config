@@ -14,8 +14,8 @@ layers:
   - P
   - '-'
   - Hyper+LEFT SHIFT
-  - {t: A, h: LOW}
-  - {t: S, h: RAI}
+  - {t: A, h: MTH}
+  - {t: S, h: SYM}
   - D
   - F
   - G
@@ -43,20 +43,20 @@ layers:
   - {t: RETURN, h: RIGHT COMMAND}
   - {t: DELETE, h: RIGHT ALT}
   - {t: ':', h: RIGHT CONTROL}
-  LOW:
+  MTH:
   - ↹
-  - '*'
+  - {t: ▽, type: trans}
   - +
   - '7'
   - '8'
   - '5'
-  - '!'
-  - '"'
+  - '*'
+  - /
+  - '='
   - '#'
-  - $
   - '{'
   - '}'
-  - /
+  - '@'
   - {type: held}
   - '-'
   - '4'
@@ -69,7 +69,7 @@ layers:
   - (
   - )
   - $$mdi:apple-keyboard-shift$$
-  - '='
+  - {t: ▽, type: trans}
   - '0'
   - '1'
   - '2'
@@ -86,46 +86,46 @@ layers:
   - {t: ⏎, h: RIGHT COMMAND}
   - {t: DELETE, h: RIGHT ALT}
   - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
-  RAI:
+  SYM:
   - ↹
   - '!'
-  - '@'
+  - BT CLR
+  - '"'
   - '#'
   - $
   - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
+  - AMPERSAND
+  - /
+  - '='
+  - '?'
+  - '*'
+  - $$mdi:apple-keyboard-control$$
+  - .
+  - {type: held}
   - (
   - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
+  - '{'
+  - LEFT ARROW
+  - ↓
+  - UP ARROW
+  - →
+  - '~'
   - '`'
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - Reset
+  - '['
+  - ']'
+  - '}'
   - _
   - +
   - '{'
   - '}'
   - '|'
   - '~'
-  - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - '&studio_unlock'
-  - $$mdi:apple-keyboard-option$$
+  - {t: ESCAPE, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: BACKSPACE, h: LEFT ALT}
+  - {t: ␣, h: LEFT COMMAND}
+  - {t: ⏎, h: RIGHT COMMAND}
+  - {t: DELETE, h: RIGHT ALT}
+  - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
