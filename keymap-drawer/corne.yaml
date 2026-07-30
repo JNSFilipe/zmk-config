@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ↹
+  - ESCAPE
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - Hyper+LEFT SHIFT
+  - {t: ↹, h: Hyper+LEFT SHIFT}
   - {t: A, h: MTH}
   - {t: S, h: SYM}
   - D
@@ -35,14 +35,14 @@ layers:
   - M
   - ','
   - .
-  - /
+  - '-'
   - \
-  - {t: ESCAPE, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ⏎, h: '$$mdi:apple-keyboard-control$$'}
   - {t: BACKSPACE, h: RIGHT ALT}
   - {t: ␣, h: LEFT META}
-  - {t: RETURN, h: RIGHT COMMAND}
+  - {t: ␣, h: RIGHT COMMAND}
   - {t: DELETE, h: RIGHT ALT}
-  - {t: ':', h: RIGHT CONTROL}
+  - {t: ENTER, h: RIGHT CONTROL}
   MTH:
   - ↹
   - {t: ▽, type: trans}
