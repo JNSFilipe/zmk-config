@@ -11,6 +11,34 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        behaviors {
+                // GUI: tap = LGUI, double tap = GUI+SPACE
+                td_gui: tap_dance_gui {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LGUI>, <&kp LG(SPACE)>;
+                };
+                // SPACE: tap = SPACE, double tap = GUI+SPACE
+                td_spc: tap_dance_spc {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp SPACE>, <&kp LG(SPACE)>;
+                };
+                // Letters Q-P: tap = letter, double tap = 1-0
+                td_q: tap_dance_q { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp Q>, <&kp N1>; };
+                td_w: tap_dance_w { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp W>, <&kp N2>; };
+                td_e: tap_dance_e { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp E>, <&kp N3>; };
+                td_r: tap_dance_r { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp R>, <&kp N4>; };
+                td_t: tap_dance_t { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp T>, <&kp N5>; };
+                td_y: tap_dance_y { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp Y>, <&kp N6>; };
+                td_u: tap_dance_u { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp U>, <&kp N7>; };
+                td_i: tap_dance_i { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp I>, <&kp N8>; };
+                td_o: tap_dance_o { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp O>, <&kp N9>; };
+                td_p: tap_dance_p { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp P>, <&kp N0>; };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -21,10 +49,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &td_q &td_w &td_e &td_r &td_t   &td_y &td_u  &td_i     &td_o   &td_p    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                  &td_gui &mo 1 &td_spc   &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
